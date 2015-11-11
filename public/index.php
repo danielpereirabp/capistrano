@@ -3,9 +3,7 @@
 require '../vendor/autoload.php';
 
 $client = new GuzzleHttp\Client();
-$res = $client->request('GET', 'https://api.github.com/user', [
-    'auth' => ['user', 'pass']
-]);
+$res = $client->get('http://httpbin.org/get');
 echo $res->getStatusCode();
 // "200"
 echo $res->getHeader('content-type');
