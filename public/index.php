@@ -6,6 +6,8 @@ $client = new GuzzleHttp\Client();
 
 $res = $client->get('http://httpbin.org/get');
 
+echo 'Hello World!';
+
 echo $res->getStatusCode() . PHP_EOL;
 // "200"
 
