@@ -8,11 +8,11 @@ $res = $client->get('http://httpbin.org/get');
 
 echo 'Hello World!';
 
-echo $res->getStatusCode() . PHP_EOL;
+#echo $res->getStatusCode() . PHP_EOL;
 // "200"
 
-echo $res->getHeader('content-type') . PHP_EOL;
+#echo $res->getHeader('content-type') . PHP_EOL;
 // 'application/json; charset=utf8'
 
-echo $res->getBody() . PHP_EOL;
+#echo $res->getBody() . PHP_EOL;
 // {"type":"User"...
